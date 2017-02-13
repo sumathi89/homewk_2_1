@@ -22,11 +22,11 @@ $discount_price_f = "$".number_format($discount_price, 2);
 <main>
 <h1>This page is under construction</h1>
 <label>Product Description:</label>
-<span><?php echo $product_description; ?></span><br>
+<span><?php echo htmlspecialchars($product_description); ?></span><br>
 <label>List Price:</label>
-<span><?php echo $list_price_f; ?></span><br>
+<span><?php echo htmlspecialchars($list_price_f); ?></span><br>
 <label>Standard Discount:</label>
-<span><?php echo $discount_percent_f; ?></span><br>
+<span><?php echo htmlspecialchars($discount_percent_f); ?></span><br>
 <label>Discount Amount:</label>
 <span><?php echo $discount_f; ?></span><br>
 <label>Discount Price:</label>
